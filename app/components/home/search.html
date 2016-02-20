@@ -1,0 +1,10 @@
+﻿<modal #modal (onClose)="onModalClosed($event)">
+	<modal-header [show-close]="true">
+		<h4 class="modal-title">I'm a modal!</h4>
+	</modal-header>
+	<modal-body>
+		<property-search #propertySearch (search-submitted)="onSearchSubmitted($event)"
+						 (result-selected)="onResultSelected($event)"></property-search>
+	</modal-body>
+	<modal-footer [show-default-buttons]="true"></modal-footer>
+</modal>

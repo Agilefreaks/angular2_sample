@@ -1,0 +1,7 @@
+﻿<label for="address">Start by typing in the address of the building</label>
+<input [ngFormControl]="address" placeholder="address" type="text" (keypress)="onKeyPressed($event.keyCode)" />
+<ul>
+	<li *ngFor="#result of searchResults | async">
+		<search-result [result]="result" (selected)="onResultSelected(result)"></search-result>
+	</li>
+</ul>

@@ -1,0 +1,17 @@
+﻿// Import Bootstrap
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// Import One css
+@import "vendor/_one";
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic;
+}
+
+#main-container {
+    min-height: 600px;
+}

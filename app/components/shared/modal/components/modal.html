@@ -1,0 +1,7 @@
+﻿<div id="{{id}}" class="modal" [ngClass]="{ fade: animation }" tabindex="-1" role="dialog">
+	<div class="modal-dialog" [ngClass]="{ 'modal-sm': isSmall(), 'modal-lg': isLarge() }">
+		<div class="modal-content">
+			<ng-content></ng-content>
+		</div>
+	</div>
+</div>
