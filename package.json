@@ -42,6 +42,7 @@
     "jasmine-core": "2.4.1",
     "karma": "0.13.21",
     "karma-jasmine": "0.3.7",
+    "karma-json-reporter": "^1.2.0",
     "karma-phantomjs2-launcher": "0.5.0",
     "rimraf": "2.5.2",
     "tsd": "0.6.5",

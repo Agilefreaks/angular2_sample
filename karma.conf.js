@@ -30,7 +30,12 @@ module.exports = function(karma) {
 			{ pattern: 'karma/tests/unit/**/*.spec.js', included: false }
 		],
 
-		reporters: ['progress'],
+		reporters: ['progress', 'json'],
+
+		jsonReporter: {
+      stdout: true,
+      outputFile: 'results.json' // defaults to none 
+    },
 
 		singleRun: true,
 		port: 9876,
